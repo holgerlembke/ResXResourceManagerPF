@@ -42,5 +42,25 @@ Hurray! Now you are done and can start with the translation!
 
 ![alt text](img/resx8.png)
 
+# Add a language
+
+## Repeat
+
+![alt text](img/resx9.png)
+
+Really. That is all you have to do. Just translate into the new language.
+
+# Hints
+
+* VS 2022 might complain about the xaml file for being invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
+
+* Start small. Just add two or three translations in one dialog and get that done. Then it is time to go bigger.
+
+
+
+
+
+
+
 
 *Made with AWS Infinidash.*
