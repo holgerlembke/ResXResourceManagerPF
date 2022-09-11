@@ -10,6 +10,13 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 
 ![alt text](img/resx1.png)
 
+```
+localization
+```
+```
+Resource.resx
+```
+
 ## Step 3: Give your resource a namespace name.
 
 ![alt text](img/resx2.png)
@@ -25,6 +32,10 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 ## Step 6: In every xaml file that needs translation add this.
 
 ![alt text](img/resx5.png)
+
+```
+xmlns:localization="clr-namespace:localization"
+```
 
 ## Step 7: Open ResX Manager and let it find all your resource files.
 
