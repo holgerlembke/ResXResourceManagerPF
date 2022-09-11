@@ -14,7 +14,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 
 ![alt text](img/resx2.png)
 
-## Step 4: Open the resource file (resource.resx) and change the access to public. Remember this step for every new resource.
+## Step 4: Open the resource file (resource.resx) and change the access to public.
 
 ![alt text](img/resx3.png)
 
