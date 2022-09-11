@@ -42,7 +42,7 @@ Hurray! Now you are done and can start with the translation!
 
 ![alt text](img/resx8.png)
 
-# Add a languag
+# Add a language
 
 ## Repeat
 
