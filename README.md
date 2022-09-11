@@ -2,9 +2,17 @@
 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-# ResXResourceManager Pain Free Start with VS 2022
+# ResX Resource Manager Pain Free Start with VS 2022
+
+This guide shall help you getting a smooth start with ResX Resource Manager. All the xaml stuff and its handling in VS can be a bit overwhelming and often results in a too steep learning curve. Oh this pain.
+
+The secondary mouse button is your best friend. Clicking onto the right item helps a lot. But you know that already.
 
 ## Step 1: Get https://github.com/dotnet/ResXResourceManager via Extentions Manager
+
+```
+resxmanager
+```
 
 ## Step 2: Create a folder for your localization resources and create a basic resource.
 
