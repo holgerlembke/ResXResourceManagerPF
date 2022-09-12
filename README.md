@@ -1,7 +1,3 @@
-# WIP WIP WIP
-
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-
 # ResX Resource Manager Pain Free Start with Visual Studio 2022
 
 This guide shall help you getting a smooth start with ResX Resource Manager. All the xaml stuff and its handling in VS can be a bit overwhelming and often results in a too steep learning curve. Oh this pain.
@@ -117,6 +113,48 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo("se-FI");
 ```
 to select a specific translation. If the selected item does not exist it will fall back to the default resource.
 
+# The Undiscovered Country: Which cultures are translated?
+
+I want to build the ubiquitous dialog item that lets a user select the language/culture for the application. After somme rumaging within the code I found no
+way to get a list of existing cultures... 
+
+I came up with this code:
+```
+private string[] GetCultures()
+{
+    List<string> res = new List<string>();
+
+    string assemordner = AppDomain.CurrentDomain.BaseDirectory;
+    string[] subordner = Directory.GetDirectories(assemordner, "*.*", SearchOption.AllDirectories);
+
+    foreach (string folder in subordner)
+    {
+        try
+        {
+            Assembly asm = System.Reflection.Assembly.LoadFrom(
+                folder + Path.DirectorySeparatorChar + AppDomain.CurrentDomain.FriendlyName + ".resources.dll");
+            string[] resnames = asm.GetManifestResourceNames();
+
+            if (resnames.Length == 1)
+            {
+                string ordnername = new DirectoryInfo(folder).Name;
+
+                if (resnames[0].IndexOf(@"." + ordnername + @".") >-1)
+                {
+                    res.Add(ordnername);
+                }
+            }
+        }
+        catch
+        {
+            // Eat it.
+        }
+    }
+
+    return res.ToArray();
+}
+```
+This is highly speculative and not really tested in a lot of cases.
 
 # Hints
 
