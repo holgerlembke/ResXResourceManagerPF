@@ -95,12 +95,34 @@ You can work the other way round: Create a key within the ResX Manager, translat
 string c = localization.Resource.AddWindow;
 ```
 
+# Force a specific translation at runtime
+
+Sometimes you want to use a translation that is not identified by the current specific culture identifier. This is the way:
+
+## identify the start window by opening app.xaml
+
+![alt text](img/resx12a.png)
+
+StartupUri contains the class that is created at startup. Go to that class constructor. It should look like that:
+
+![alt text](img/resx12b.png)
+
+## Add the following line before *InitializeComponent()* to select the default resource
+```
+Thread.CurrentThread.CurrentUICulture = new CultureInfo("");
+```
+or something like
+```
+Thread.CurrentThread.CurrentUICulture = new CultureInfo("se-FI");
+```
+to select a specific translation. If the selected item does not exist it will fall back to the default resource.
+
 
 # Hints
 
 * VS 2022 might complain that the xaml file is invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
 
-* Start small. Just add two or three translations in one dialog and get that done. Then it is time to go bigger.
+* Start small. Just add two or three translations in one dialog and get that done. Then it is time to escalate.
 
 * While working with xaml text Ctrl-Z is your best friend. Undo errors, don't try to fix them.
 
