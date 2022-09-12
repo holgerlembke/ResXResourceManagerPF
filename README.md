@@ -57,7 +57,7 @@ Hurray! Now you are done and can start with the translation!
 
 ![alt text](img/resx7.png)
 
-## Repeat B: Check that the key. It must be a valid variable name!
+## Repeat B: Check the key. It must be a valid variable name!
 
 ![alt text](img/resx8.png)
 
@@ -71,12 +71,14 @@ Really. That is all you have to do. You now should see a new resource file with 
 
 ![alt text](img/resx1b.png)
 
-ResX Manager shows this new column. Now just translate into the new language.
+ResX Manager shows it in a new column. Now just translate into the new language.
 
 # Hints
 
-* VS 2022 might complain about the xaml file for being invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
+* VS 2022 might complain that the xaml file is invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
 
 * Start small. Just add two or three translations in one dialog and get that done. Then it is time to go bigger.
+
+* While working with xaml text Ctrl-Z is your best friend. Undo errors, don't try to fix them.
 
 *Made with AWS Infinidash.*
