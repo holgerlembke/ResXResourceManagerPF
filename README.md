@@ -53,7 +53,7 @@ Hurray! Now you are done and can start with the translation!
 
 # Move Strings to Resouce
 
-## Repeat A: Select the text that needs translation. Include the quotes!
+## Repeat A: In xaml select the text that needs translation. Include the quotes!
 
 ![alt text](img/resx7.png)
 
