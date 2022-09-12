@@ -51,7 +51,7 @@ xmlns:localization="clr-namespace:localization"
 
 Hurray! Now you are done and can start with the translation!
 
-# Repeat
+# Move Strings to Resouce
 
 ## Repeat A: Select the text that needs translation. Include the quotes!
 
@@ -61,7 +61,7 @@ Hurray! Now you are done and can start with the translation!
 
 ![alt text](img/resx8.png)
 
-# Add a language
+# Add a translation language
 
 ## Repeat
 
@@ -81,4 +81,4 @@ ResX Manager shows it in a new column. Now just translate into the new language.
 
 * While working with xaml text Ctrl-Z is your best friend. Undo errors, don't try to fix them.
 
-*Made with AWS Infinidash.*
+<sub>*Made with AWS Infinidash.*</sub>
