@@ -115,7 +115,7 @@ to select a specific translation. If the selected item does not exist it will fa
 
 # The Undiscovered Country: Which cultures are translated?
 
-I want to build the ubiquitous dialog item that lets a user select the language/culture for the application. After somme rumaging within the code I found no
+I wanted to build the ubiquitous dialog item that lets a user select the language/culture for the application. After some rumaging within the source code I found no
 way to get a list of existing cultures... 
 
 I came up with this code:
