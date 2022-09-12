@@ -2,7 +2,7 @@
 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-# ResX Resource Manager Pain Free Start with VS 2022
+# ResX Resource Manager Pain Free Start with Visual Studio 2022
 
 This guide shall help you getting a smooth start with ResX Resource Manager. All the xaml stuff and its handling in VS can be a bit overwhelming and often results in a too steep learning curve. Oh this pain.
 
