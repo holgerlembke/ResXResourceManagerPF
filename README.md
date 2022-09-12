@@ -120,9 +120,9 @@ to select a specific translation. If the selected item does not exist it will fa
 
 # Hints
 
-* VS 2022 might complain that the xaml file is invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
+* VS might complain that the xaml file is invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
 
-* Start small. Just add two or three translations in one dialog and get that done. Then it is time to escalate.
+* Start small. Just add two or three translations in one dialog and get that done. When that works it is time to escalate.
 
 * While working with xaml text Ctrl-Z is your best friend. Undo errors, don't try to fix them.
 
