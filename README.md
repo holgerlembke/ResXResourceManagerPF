@@ -73,6 +73,29 @@ Really. That is all you have to do. You now should see a new resource file with 
 
 ResX Manager shows it in a new column. Now just translate into the new language.
 
+# Translation in Code
+
+Just write it the way you would normally do.
+```
+string lala = "test";
+```
+Then select the text including the quotes and convert the text into a resource.
+
+![alt text](img/resx10.png)
+
+Remember I: The key must be a valid variable name.
+
+Remember II: you can shorten the namespace to your liking.
+
+You can work the other way round: Create a key within the ResX Manager, translate it and then use it in code:
+
+![alt text](img/resx11.png)
+
+```
+string c = localization.Resource.AddWindow;
+```
+
+
 # Hints
 
 * VS 2022 might complain that the xaml file is invalid. Try to Build/Run/F5. It will compile the new resource entries and VS should be happy again.
