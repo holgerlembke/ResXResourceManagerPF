@@ -132,7 +132,7 @@ private string[] GetCultures()
         try
         {
             Assembly asm = System.Reflection.Assembly.LoadFrom(
-                folder + Path.DirectorySeparatorChar + AppDomain.CurrentDomain.FriendlyName + ".resources.dll");
+                folder + Path.DirectorySeparatorChar + AppDomain.CurrentDomain.FriendlyName + @".resources.dll");
             string[] resnames = asm.GetManifestResourceNames();
 
             if (resnames.Length == 1)
